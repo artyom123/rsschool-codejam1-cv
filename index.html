@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV: Virshich Artem</title>
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#contact">Contact</a>
+                <a href="#summary">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#code">Example code</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#language">Language skills</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="name">
+            <img src="./img/foto.jpg" alt="Personal photo">
+            <h1>Artem Virshich</h1>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Aerodromnaya St., 3, Minsk, Belarus</p>
+            <p><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:80297481704">8(029)748-17-04</a></p>
+            <p><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:80445499717">8(044)549-97-17</a></p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:artvirsh@mail.ru">artvirsh@mail.ru</a></p>
+            <p><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/artyom123" target="_blank">github.com</a></p>
+            <p><i class="fa fa-telegram" aria-hidden="true"></i> <a href="https://t.me/artemvir" target="_blank">telegram</a></p>
+        </section>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>I love to learn new technologies and work with them. I hope to come across a firm which allows me to illustrate my talents within an environment that promotes teamwork and professional growth.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript, jQuery, PHP, MySQL, Ajax, React</li>
+                <li>Bootstrap, Foundation</li>
+                <li>Webpack, Gulp</li>
+                <li>CMS: Joomla, WordPress, MODx</li>
+                <li>Git</li>
+                <li>Adobe Photoshop</li>
+            </ul>
+        </section>
+
+        <section id="code" class="code">
+            <h2>Example code</h2> 
+            <figure>
+                <h3>Brackets (task Rolling Scopes School)</h3>
+                <a href="https://github.com/artyom123/additional_5" target="_blank">brackets</a>
+                <p>
+                    <code>
+                        function check(str, bracketsConfig) {<br>
+
+                            let config = [].concat.apply([], bracketsConfig);<br>
+                            str = str.split('');<br>
+                            
+                            for(let i = 0; i < str.length; i++) {<br>      
+                                if(config.indexOf(str[i]) + 1 === config.lastIndexOf(str[i + 1])) {<br>
+                                    str.splice(i, 2);<br>
+                                i = -1;<br>
+                                }<br>
+                            }<br>
+                        
+                            return str.length === 0;<br>
+                        }
+                    </code>
+                </p>
+            </figure>
+            <figure>
+                <h3>Love triangles (task Rolling Scopes School)</h3>
+                <a href="https://github.com/artyom123/love-triangle" target="_blank">love triangles</a>
+                <p>
+                    <code>
+                        function getLoveTrianglesCount(preferences = []) {<br>
+                            let k = 0;<br>
+                        
+                            for(let i = 0; i < preferences.length; i++){<br>
+                                if(preferences[preferences[preferences[i] - 1]-1] === i + 1){<br>
+                                k++;<br>
+                            }<br>
+                            }<br>
+                            return Math.floor(k/3);<br>
+                        };
+                    </code>
+                </p>
+            </figure> 
+            <figure>
+                <h3>Zeros (task Rolling Scopes School)</h3>
+                <a href="https://github.com/artyom123/love-triangle" target="_blank">love triangles</a>
+                <p>
+                    <code>
+                        function getZerosCount(number) {<br>
+                            let count = 0, i = 1, x = 0;<br>
+                        
+                            while(x < number){<br>
+                                x = Math.pow(5,i++);<br>
+                                count += Math.floor(number / x);<br>
+                            }<br>
+                            return count;<br>
+                        }
+                    </code>
+                </p>
+            </figure>   
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <figure>
+                <ul>
+                    <li>link: <a href="http://vrlife.by" target="_blank">vrlife.by</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>link: <a href="http://vidilux.by/" target="_blank">vidilux.by</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>link: <a href="https://israel-plastic.ru/" target="_blank">israel-plastic.ru</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>link: <a href="https://assuta-clinic.co.il/" target="_blank">assuta-clinic</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>link: <a href="http://ichilov.co.il" target="_blank">ichilov</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>link: <a href="https://artyom123.github.io/hacktrain/" target="_blank">hacktrain</a></li>
+                    <li>code: <a href="https://github.com/artyom123/hacktrain" target="_blank">hacktrain</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>link: <a href="https://artyom123.github.io/game/public/" target="_blank">game "Magic"</a></li>
+                    <li>code: <a href="https://github.com/artyom123/game" target="_blank">game "Magic"</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>link: <a href="https://artyom123.github.io/magic-game/" target="_blank">landing game "Magic"</a></li>
+                    <li>code: <a href="https://github.com/artyom123/magic-game" target="_blank">landing game "Magic"</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/warmup" target="_blank">Warmup</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/love-triangle" target="_blank">Love triangles</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/sorter" target="_blank">Sorter</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/quadratic-equation" target="_blank">Quadratic equation</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/Money-Exchange" target="_blank">Money Exchange</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/additional_5" target="_blank">Brackets</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/zeros" target="_blank">Zeros</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/advanced-zeros" target="_blank">advanced-zeros</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/additional_7" target="_blank">Sudoku</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/longest-consecutive-sequence" target="_blank">Longest Consecutive Sequence</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/smart-calculator" target="_blank">smart-calculator</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <ul>
+                    <li>code: <a href="https://github.com/artyom123/you-are-awesome" target="_blank">You are awesome</a></li>
+                </ul>
+            </figure>
+
+        </section>
+
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <figure>
+                <figcaption>02.2017 — 06.2018</figcaption>
+                <p>Front-end courses at the Rolling Scopes School</p>
+            </figure>
+            <figure>
+                <figcaption>09.2015 — 12.2015</figcaption>
+                <p>Programming in PHP courses at the IT-academy</p>
+                <p>Minsk,Belarus</p>
+            </figure>
+            <figure>
+                <figcaption>2016 – 2017</figcaption>
+                <p>Belarusian State University of Informatics and Radioelectronics</p>
+                <p>Specialty: Safety Management of Production Processes</p>
+                <p>Master’s Degree</p>
+            </figure>
+            <figure>
+                <figcaption>2011 – 2016</figcaption>
+                <p>Belarusian State University of Informatics and Radioelectronics</p>
+                <p>Specialty: Engineering and psychological support of information technology</p>
+            </figure>
+            
+        </section>
+
+        <section id="language">
+            <h2>Language skills</h2>
+            <p>English (pre-intermediate)</p>
+            <p>Every day exercise: duolingo. My account: <a href="https://www.duolingo.com/ArtyomVir" target="_blank">ArtyomVir</a>.
+            I also want to see a reporter once a week. Sometimes I watch movies in English.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Created by Virshich Artem. 2018</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

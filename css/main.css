@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Calibri';
+	src: url('../fonts/Calibri.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Calibri';
+	src: url('../fonts/Calibri-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: #1a1a1a;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h2:after {
+    display:block;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: #1a1a1a;
+    margin: 10px auto 20px;
+}
+
+a {
+    color: #2A68B2;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    min-height: 60px;
+    top: 0;
+    left: 0;
+    background: #e4e4e4;
+}
+
+footer {
+    background: #e4e4e4;
+    padding: 10px 0;
+}
+
+header nav {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #1a1a1a;
+    transition: all .5s ease;
+}
+
+header a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px #1a1a1a;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+header a:hover:after {
+    transform: scaleX(1);
+}
+
+.name {
+    margin-top: 100px;
+}
+
+.name img {
+    max-width: 240px;
+}
+
+.code figure {
+    margin-bottom: 20px;
+}
+
+figcaption {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.code figure code {
+    display: flex;
+    max-width: 600px;
+    text-align: left;
+    margin-top: 10px;
+    background: #4e4e4e;
+    color: #fff;
+    padding: 17px 15px;
+}
+
+.experience figure,
+.education figure {
+    margin-bottom: 12px;
+}
